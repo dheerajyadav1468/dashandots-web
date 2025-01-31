@@ -784,6 +784,9 @@
   .gk-pointer-features.animated {
     visibility: visible;
   }
+  .light-italic{
+    color: white;
+  }
 }
 
 /* ---------- MAX 767px ---------- */

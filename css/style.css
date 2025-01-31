@@ -236,7 +236,9 @@ img.responsive {
 .color-green {
   color: #0abd9f;
 }
-
+.color-yellow{
+  color:#cfca25;
+}
 .pageloader {
   z-index: 99999;
   display: flex;
@@ -2002,6 +2004,7 @@ body {
 /* Hero Section */
 .hero1 {
   min-height: calc(100vh - 100px);
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -2030,7 +2033,6 @@ body {
   color: #6c63ff;
   font-size: 18px;
   font-weight: 600;
-  /* margin-bottom: -40px; */
   opacity: 0;
   animation: fadeInUp 0.6s forwards;
 }
@@ -2039,7 +2041,6 @@ body {
   font-size: 64px;
   font-weight: 800;
   line-height: 1.1;
-  /* margin-bottom: -40px; */
   opacity: 0;
   animation: fadeInUp 0.6s 0.2s forwards;
 }
@@ -2047,7 +2048,6 @@ body {
 .title {
   font-size: 24px;
   color: #666;
-  /* margin-bottom: -30px; */
   opacity: 0;
   animation: fadeInUp 0.6s 0.4s forwards;
 }
@@ -2100,7 +2100,6 @@ body {
   gap: 60px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-
   opacity: 0;
   animation: fadeInUp 0.6s 1s forwards;
 }
@@ -2135,73 +2134,47 @@ body {
   opacity: 0;
   animation: fadeIn 0.6s 1.2s forwards;
 }
-.certifications h2 {
-  font-size: 24px;
-  color: #2d2d2d;
-  margin-bottom: 15px;
-}
-
-.cert-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.cert-item {
-  background-color: #f0f0f0;
-  padding: 15px 0px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #4a4a4a;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .hero1 {
     grid-template-columns: 1fr;
+    gap: 20px;
+    min-height: auto;
+    padding: 2rem 0;
+    text-align: center;
   }
 
   .hero1::before {
-    width: 600px;
-    height: 600px;
-    top: -50px;
-    right: -300px;
+    display: none;
+  }
+
+  .name {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.2;
+    margin: 1rem 0;
+    word-break: keep-all;
   }
 
   .hero-image {
-    display: none;
+    display: block;
+    margin: 1.5rem auto 0;
+    max-width: 300px;
+    order: 2; /* Ensures it appears after the name */
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
   }
 }
 
-@media (max-width: 768px) {
-  .name {
-    font-size: 48px;
-  }
-
-  .stats {
-    gap: 30px;
-  }
-
-  .stat-number {
-    font-size: 28px;
+@media (max-width: 480px) {
+  .hero1::before {
+    width: 200px;
+    height: 200px;
+    top: -30px;
+    right: -80px;
   }
 }

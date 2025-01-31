@@ -52,12 +52,12 @@
 }
 
 
-.nav-item:hover {
+/* .nav-item:hover {
   text-decoration: underline;
   text-decoration-color: #d91b5c;
   text-underline-offset: 16px;
   font-weight: 400;
-}
+} */
 
 .dropdown-toggle::after {
   -webkit-appearance: none !important;
