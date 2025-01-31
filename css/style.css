@@ -259,6 +259,7 @@ img.responsive {
 
 .index-3 {
   z-index: 3;
+  position: relative;
 }
 
 .index-4 {
@@ -2002,7 +2003,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  z-index: 9999;
 }
 
 /* Hero Section */
