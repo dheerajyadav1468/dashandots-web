@@ -937,7 +937,7 @@ img.responsive {
 
 /* =========================== SCREENSHOT SECTION ============================== */
 .app-section-padding {
-  padding: 140px 0 20px;
+  padding: 230px 0 20px;
 }
 
 .app-left-info {
@@ -1448,19 +1448,7 @@ img.responsive {
   --accent-color: #f8f9fa;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  overflow-x: hidden;
-}
 
 .container {
   max-width: 1200px;
@@ -2343,7 +2331,7 @@ body {
 }
 
 .mb-6{
-margin-top: 6rem;
+margin-top: 7rem;
 }
 
 @media (max-width: 968px) {
