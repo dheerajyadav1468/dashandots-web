@@ -665,6 +665,7 @@ img.responsive {
 
 .grey-white-color:before {
   background: #2d3e50;
+  display: none;
 }
 
 .grey-white-color:after {
@@ -2045,11 +2046,17 @@ body {
   animation: fadeInUp 0.6s 0.2s forwards;
 }
 
-.title {
+.title, .c-title {
   font-size: 24px;
   color: #666;
   opacity: 0;
   animation: fadeInUp 0.6s 0.4s forwards;
+}
+
+.c-title{
+  margin-top: 1rem;
+  color: #000;
+  letter-spacing: .1rem;
 }
 
 .social-links {
@@ -2160,7 +2167,7 @@ body {
     display: block;
     margin: 1.5rem auto 0;
     max-width: 300px;
-    order: 2; /* Ensures it appears after the name */
+    order: -1; 
   }
 
   .hero-image img {
@@ -2176,5 +2183,16 @@ body {
     height: 200px;
     top: -30px;
     right: -80px;
+  }
+}
+@media (max-width: 321px){
+  .hero1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    min-height: auto;
+    padding: 2rem 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
   }
 }

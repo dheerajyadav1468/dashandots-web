@@ -92,6 +92,174 @@
 
     <!-- Color Panel -->
     <!-- <link href="css/color-panel.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+     .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            max-width: 600px;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .info-section {
+            grid-column: 1;
+        }
+
+        .stats-grid {
+            grid-column: 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .info-block {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            top: 0;
+        }
+
+        .info-block:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .info-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #f3f4f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .info-block:hover .info-icon {
+            transform: scale(1.1);
+            background-color: #e0f2fe;
+        }
+
+        .info-content h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
+        }
+
+        .info-block:hover .info-content h2 {
+            color: #2563eb;
+        }
+
+        .info-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .stat-card {
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stat-number1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .projects {
+            background-color: #22c55e;
+            color: white;
+        }
+
+        .projects .stat-label {
+            color: white;
+        }
+
+        .team {
+            background-color: #b8e2ff;
+            color: #3b82f6;
+        }
+
+        .clients {
+            background-color: #bddfc9;
+            color: #22c55e;
+        }
+
+        .support {
+            background-color: #ffb4ba;
+            color: #ef4444;
+        }
+
+        @media (max-width: 968px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .info-section, .stats-grid {
+                grid-column: 1;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .stat-card {
+                min-height: 150px;
+            }
+
+            .info-block {
+                padding: 1.5rem;
+            }
+
+            .info-block:hover {
+                transform: translateY(-8px); /* Smaller lift on mobile */
+            }
+        }
+  </style>
   </head>
 
   <body>
@@ -1643,203 +1811,55 @@
           <!-- Shape 3 Color Begins -->
           <div class="gk-dd-shape grey-white-color index-3">
             <!-- Pricing Section Begins -->
-            <div
-              id="pricing"
-              class="pricing-section app-section-padding index-big relative"
-            >
-              <div class="container relative">
-                <!-- Pricing Top Row Begins -->
-                <div class="row">
-                  <!-- Pricing Right Info Begins -->
-                  <div
-                    class="col-lg-8 col-md-9 pull-right app-right-info animated"
-                    data-animation="fadeInRight"
-                    data-animation-delay="500"
-                  >
-                    <!-- Title -->
-                    <h2 class="section-title color-grey">
-                      <span class="text-extrabold">Unbelievable</span> Pricing
-                    </h2>
-                    <!-- Shape Down Arrow -->
-                    <p class="text-center color-grey">
-                      <i class="flaticon flaticon-yield gk-triangle-medium"></i>
-                    </p>
-                    <!-- Description -->
-                    <h3 class="section-msg text-center color-grey">
-                      Different plans for different user needs
-                    </h3>
+            <div class="container">
+              <h1 class="main-title">Make Your Business More Competitive And Enduring</h1>
+              
+              <div class="content-wrapper">
+                  <div class="info-section">
+                      <div class="info-block">
+                          <div class="info-icon">
+                              <img src="/images/service_icon.png" alt="Mission Icon" width="24" height="24">
+                          </div>
+                          <div class="info-content">
+                              <h2>Our Mission</h2>
+                              <p>Our Mission is seeing businesses growing with our skills & efforts, Which makes us more happy is that a business which was associated with us and shows a growth that makes us more motivated to do so.</p>
+                          </div>
+                      </div>
+      
+                      <div class="info-block">
+                          <div class="info-icon">
+                              <img src="/images/service_icon.png" alt="Vision Icon" width="24" height="24">
+                          </div>
+                          <div class="info-content">
+                              <h2>Our Vision</h2>
+                              <p>Our Vision is to create a name in the Industry which associated with creating an environment for Businesses in which they feel Confident, Independent in this growing techy world. Most of the businesses who comes to us feels helpless & our Vision to make them feel Confident.</p>
+                          </div>
+                      </div>
                   </div>
-                  <!-- Pricing Right Info Ends -->
-                  <!-- Shape Pointer -->
-                  <div
-                    class="gk-pointer-features gk-pricing-arrow animated"
-                    data-animation="fadeIn"
-                    data-animation-delay="900"
-                  >
-                    <img
-                      src="images/pricing-arrow.png"
-                      alt="Pointer"
-                      class="img-responsive"
-                    />
+      
+                  <div class="stats-grid">
+                      <div class="stat-card projects">
+                          <div class="stat-number1">3840</div>
+                          <div class="stat-label">Project Completed</div>
+                      </div>
+      
+                      <div class="stat-card team">
+                          <div class="stat-number1">350</div>
+                          <div class="stat-label">Team Members</div>
+                      </div>
+      
+                      <div class="stat-card clients">
+                          <div class="stat-number1">93%</div>
+                          <div class="stat-label">Happy Clients</div>
+                      </div>
+      
+                      <div class="stat-card support">
+                          <div class="stat-number1">24*7</div>
+                          <div class="stat-label">Customer Support</div>
+                      </div>
                   </div>
-                </div>
               </div>
-              <div class="container pricing-container">
-                <!-- Pricing Grid Row Begins -->
-                <div class="row pricing-grid">
-                  <div
-                    class="col-12"
-                    style="display: flex; flex-direction: row"
-                  >
-                    <!-- Price Table 01 -->
-                    <div
-                      class="col-md-4 col-sm-4 pricing-item1 animated"
-                      data-animation="fadeInLeft"
-                      data-animation-delay="500"
-                    >
-                      <div class="pricing-box">
-                        <!-- Price Title -->
-                        <div class="pricing-title">
-                          <h3
-                            class="text-center text-uppercase text-bold color-green"
-                          >
-                            Standard
-                          </h3>
-                          <div class="price text-center">
-                            <h6 class="color-white text-bold">
-                              <span class="symbol color-grey">$</span>25<span
-                                class="per-month color-grey"
-                                >/mo</span
-                              >
-                            </h6>
-                          </div>
-                        </div>
-                        <!-- Price Table Features -->
-                        <ul class="list-unstyled gk-list text-bold color-grey">
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Photos
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Shares
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> 24x7
-                            Customer Service
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Users
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> Free
-                            Data Backup
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Price Table 02 -->
-                    <div
-                      class="col-md-4 col-sm-4 pricing-item2 animated"
-                      data-animation="fadeIn"
-                      data-animation-delay="700"
-                    >
-                      <div class="pricing-box">
-                        <!-- Price Title -->
-                        <div class="pricing-title">
-                          <h3
-                            class="text-center text-uppercase text-bold color-green"
-                          >
-                            Personal
-                          </h3>
-                          <div class="price text-center">
-                            <h6 class="color-white text-bold">
-                              <span class="symbol color-grey">$</span>55<span
-                                class="per-month color-grey"
-                                >/mo</span
-                              >
-                            </h6>
-                          </div>
-                        </div>
-                        <!-- Price Table Features -->
-                        <ul class="list-unstyled gk-list text-bold color-grey">
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Photos
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Shares
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> 24x7
-                            Customer Service
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Users
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> Free
-                            Data Backup
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Price Table 03 -->
-                    <div
-                      class="col-md-4 col-sm-4 pricing-item3 animated"
-                      data-animation="fadeInRight"
-                      data-animation-delay="500"
-                    >
-                      <div class="pricing-box">
-                        <!-- Price Title -->
-                        <div class="pricing-title">
-                          <h3
-                            class="text-center text-uppercase text-bold color-green"
-                          >
-                            Business
-                          </h3>
-                          <div class="price text-center">
-                            <h6 class="color-white text-bold">
-                              <span class="symbol color-grey">$</span>99<span
-                                class="per-month color-grey"
-                                >/mo</span
-                              >
-                            </h6>
-                          </div>
-                        </div>
-                        <!-- Price Table Features -->
-                        <ul class="list-unstyled gk-list text-bold color-grey">
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Photos
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Shares
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> 24x7
-                            Customer Service
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span>
-                            Unlimited Users
-                          </li>
-                          <li class="no-border">
-                            <span class="simple-icon icon-check"></span> Free
-                            Data Backup
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Pricing Grid Row Ends -->
-              </div>
-            </div>
+          </div>
             <!-- Pricing Section Ends -->
 
             <!-- Demo Section Begins  -->
