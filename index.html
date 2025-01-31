@@ -71,10 +71,6 @@
       }
     </script>
 
-    <!-- Icon -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <!-- CSS Begins-->
     <link
       rel="stylesheet"
@@ -97,178 +93,175 @@
     <!-- Color Panel -->
     <!-- <link href="css/color-panel.css" rel="stylesheet" type="text/css" /> -->
     <style>
-     .main-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #333;
-            max-width: 600px;
-            line-height: 1.2;
-            margin-bottom: 3rem;
-        }
+      .main-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        max-width: 600px;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+      }
 
+      .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .info-section {
+        grid-column: 1;
+      }
+
+      .stats-grid {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .info-block {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        position: relative;
+        top: 0;
+      }
+
+      .info-block:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .info-icon {
+        width: 48px;
+        height: 48px;
+        background-color: #f3f4f6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+      }
+
+      .info-block:hover .info-icon {
+        transform: scale(1.1);
+        background-color: #e0f2fe;
+      }
+
+      .info-content h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.75rem;
+        transition: color 0.3s ease;
+      }
+
+      .info-block:hover .info-content h2 {
+        color: #2563eb;
+      }
+
+      .info-content p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .stat-card {
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: scale(1.05);
+      }
+
+      .stat-number1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        color: #333;
+      }
+
+      .projects {
+        background-color: #22c55e;
+        color: white;
+      }
+
+      .projects .stat-label {
+        color: white;
+      }
+
+      .team {
+        background-color: #b8e2ff;
+        color: #3b82f6;
+      }
+
+      .clients {
+        background-color: #bddfc9;
+        color: #22c55e;
+      }
+
+      .support {
+        background-color: #ffb4ba;
+        color: #ef4444;
+      }
+
+      @media (max-width: 968px) {
         .content-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: start;
-            margin-top: 3rem;
+          grid-template-columns: 1fr;
         }
 
-        .info-section {
-            grid-column: 1;
-        }
-
+        .info-section,
         .stats-grid {
-            grid-column: 2;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+          grid-column: 1;
         }
 
-        .info-block {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-            position: relative;
-            top: 0;
+        .main-title {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .stats-grid {
+          grid-template-columns: 1fr;
         }
 
-        .info-block:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .info-icon {
-            width: 48px;
-            height: 48px;
-            background-color: #f3f4f6;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-        }
-
-        .info-block:hover .info-icon {
-            transform: scale(1.1);
-            background-color: #e0f2fe;
-        }
-
-        .info-content h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 0.75rem;
-            transition: color 0.3s ease;
-        }
-
-        .info-block:hover .info-content h2 {
-            color: #2563eb;
-        }
-
-        .info-content p {
-            color: #666;
-            line-height: 1.6;
+        .container {
+          padding: 2rem 1rem;
         }
 
         .stat-card {
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            min-height: 180px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s ease;
+          min-height: 150px;
         }
 
-        .stat-card:hover {
-            transform: scale(1.05);
+        .info-block {
+          padding: 1.5rem;
         }
 
-        .stat-number1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+        .info-block:hover {
+          transform: translateY(-8px); /* Smaller lift on mobile */
         }
-
-        .stat-label {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        .projects {
-            background-color: #22c55e;
-            color: white;
-        }
-
-        .projects .stat-label {
-            color: white;
-        }
-
-        .team {
-            background-color: #b8e2ff;
-            color: #3b82f6;
-        }
-
-        .clients {
-            background-color: #bddfc9;
-            color: #22c55e;
-        }
-
-        .support {
-            background-color: #ffb4ba;
-            color: #ef4444;
-        }
-
-        .mb-6{
-          margin-top: 6rem;
-        }
-
-        @media (max-width: 968px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            .info-section, .stats-grid {
-                grid-column: 1;
-            }
-
-            .main-title {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .stat-card {
-                min-height: 150px;
-            }
-
-            .info-block {
-                padding: 1.5rem;
-            }
-
-            .info-block:hover {
-                transform: translateY(-8px); /* Smaller lift on mobile */
-            }
-        }
-  </style>
+      }
+    </style>
   </head>
 
   <body>
@@ -376,87 +369,119 @@
                           </div>
                           <!-- Content Sections (Team, Gallery, etc.) -->
                           <div id="team-content" style="display: none">
-                         <!-- Start of meet our team section -->
-                          <div class="row">
-                            <div class="col-lg-4">
-                              <div class="card-team">
-                                <div class="team-img-container">
-                                  <img src="/images/sumit_profile.jpg" />
-                                </div>
-                                <div class="content-team" onclick="navigateToPage('ProfileS.html')">
-                                  <a class="nav-link">
-                                  <h6 class="team-member-name">Sumit Kumar Pratihast</h6>
-                                  View Profile</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-4">
-                              <div class="card-team">
-                                <div class="team-img-container">
-                                  <img src="/images/bittu_profile.jpg" />
-                                </div>
-                                <div class="content-team"  onclick="navigateToPage('ProfileB.html')">
-                                  <a class="nav-link">
-                                  <h6 class="team-member-name">Bittu Kumar Pratihas</h6>
-                                  View Profile</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-4">
-                              <div class="card-team">
-                                <div class="team-img-container">
-                                  <img src="/images/mihir_profile.jpg" />
-                                </div>
-                                <div class="content-team" onclick="navigateToPage('ProfileM.html')">
-                                  <a class="nav-link">
-                                  <h6 class="team-member-name">Mihir Kumar Mishra</h6>
-                                  View Profile</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-4">
-                              <div class="card-team">
+                            <!-- Start of meet our team section -->
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="card-team">
                                   <div class="team-img-container">
-                                      <img src="/images/myprofile.jpg" />
+                                    <img src="/images/sumit_profile.jpg" />
                                   </div>
-                                  <div class="content-team" onclick="navigateToPage('profileD.html')">
-                                    <a class="nav-link" >
-                                          <h6 class="team-member-name">Dheeraj Yadav</h6>
-                                          View Profile
-                                      </a>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('ProfileS.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Sumit Kumar Pratihast
+                                      </h6>
+                                      View Profile</a
+                                    >
                                   </div>
-                              </div>
-                          </div>
-                          
-                            <div class="col-lg-4">
-                              <div class="card-team">
-                                <div class="team-img-container">
-                                  
-                                  <img src="/images/rohit_profile.jpg" />
                                 </div>
-                                <div class="content-team" onclick="navigateToPage('ProfileR.html')">
-                                  <a class="nav-link">
-                                  <h6 class="team-member-name">Rohit Gupta</h6>
-                                  View Profile</a>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="card-team">
+                                  <div class="team-img-container">
+                                    <img src="/images/bittu_profile.jpg" />
+                                  </div>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('ProfileB.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Bittu Kumar Pratihas
+                                      </h6>
+                                      View Profile</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="card-team">
+                                  <div class="team-img-container">
+                                    <img src="/images/mihir_profile.jpg" />
+                                  </div>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('ProfileM.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Mihir Kumar Mishra
+                                      </h6>
+                                      View Profile</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="card-team">
+                                  <div class="team-img-container">
+                                    <img src="/images/myprofile.jpg" />
+                                  </div>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('profileD.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Dheeraj Yadav
+                                      </h6>
+                                      View Profile
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-4">
+                                <div class="card-team">
+                                  <div class="team-img-container">
+                                    <img src="/images/rohit_profile.jpg" />
+                                  </div>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('ProfileR.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Rohit Gupta
+                                      </h6>
+                                      View Profile</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="card-team">
+                                  <div class="team-img-container">
+                                    <img src="/images/ujjaval_profile.jpg" />
+                                  </div>
+                                  <div
+                                    class="content-team"
+                                    onclick="navigateToPage('ProfileU.html')"
+                                  >
+                                    <a class="nav-link">
+                                      <h6 class="team-member-name">
+                                        Ujjaval Raj
+                                      </h6>
+                                      View Profile</a
+                                    >
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-4">
-                              <div class="card-team">
-                                <div class="team-img-container">
-                                  <img src="/images/ujjaval_profile.jpg" />
-                                </div>
-                                <div class="content-team" onclick="navigateToPage('ProfileU.html')">
-                                  <a class="nav-link">
-                                  <h6 class="team-member-name">Ujjaval Raj</h6>
-                                 View Profile</a>
-                                </div>
-                              </div>
-                            </div>
-                           
-                            
-                          </div>
-                          <!-- End of Meet our team section -->
+                            <!-- End of Meet our team section -->
                           </div>
 
                           <div id="gallery-content" style="display: none">
@@ -1818,59 +1843,81 @@
         <!-- Shape 3 Container Begins -->
         <div class="gk-shape-cover">
           <!-- Shape 3 Color Begins -->
-          <div class=" grey-white-color index-3">
+          <div class="gk-dd-shape grey-white-color index-3">
             <!-- Pricing Section Begins -->
             <div class="container">
-              <h3 class="section-msg1 color-grey text-uppercase mb-6">
-                <span class="text-extrabold">Make Your Business</span>
-                <br>More Competetive and Enduring
-              </h3>
+              <h1 class="main-title">
+                Make Your Business More Competitive And Enduring
+              </h1>
+
               <div class="content-wrapper">
-                  <div class="info-section">
-                      <div class="info-block">
-                          <div class="info-icon">
-                              <img src="/images/service_icon.png" alt="Mission Icon" width="24" height="24">
-                          </div>
-                          <div class="info-content">
-                              <h2>Our Mission</h2>
-                              <p>Our Mission is seeing businesses growing with our skills & efforts, Which makes us more happy is that a business which was associated with us and shows a growth that makes us more motivated to do so.</p>
-                          </div>
-                      </div>
-      
-                      <div class="info-block">
-                          <div class="info-icon">
-                              <img src="/images/service_icon.png" alt="Vision Icon" width="24" height="24">
-                          </div>
-                          <div class="info-content">
-                              <h2>Our Vision</h2>
-                              <p>Our Vision is to create a name in the Industry which associated with creating an environment for Businesses in which they feel Confident, Independent in this growing techy world. Most of the businesses who comes to us feels helpless & our Vision to make them feel Confident.</p>
-                          </div>
-                      </div>
+                <div class="info-section">
+                  <div class="info-block">
+                    <div class="info-icon">
+                      <img
+                        src="/images/service_icon.png"
+                        alt="Mission Icon"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <div class="info-content">
+                      <h2>Our Mission</h2>
+                      <p>
+                        Our Mission is seeing businesses growing with our skills
+                        & efforts, Which makes us more happy is that a business
+                        which was associated with us and shows a growth that
+                        makes us more motivated to do so.
+                      </p>
+                    </div>
                   </div>
-      
-                  <div class="stats-grid">
-                      <div class="stat-card projects">
-                          <div class="stat-number1">3840</div>
-                          <div class="stat-label">Project Completed</div>
-                      </div>
-      
-                      <div class="stat-card team">
-                          <div class="stat-number1">350</div>
-                          <div class="stat-label">Team Members</div>
-                      </div>
-      
-                      <div class="stat-card clients">
-                          <div class="stat-number1">93%</div>
-                          <div class="stat-label">Happy Clients</div>
-                      </div>
-      
-                      <div class="stat-card support">
-                          <div class="stat-number1">24*7</div>
-                          <div class="stat-label">Customer Support</div>
-                      </div>
+
+                  <div class="info-block">
+                    <div class="info-icon">
+                      <img
+                        src="/images/service_icon.png"
+                        alt="Vision Icon"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <div class="info-content">
+                      <h2>Our Vision</h2>
+                      <p>
+                        Our Vision is to create a name in the Industry which
+                        associated with creating an environment for Businesses
+                        in which they feel Confident, Independent in this
+                        growing techy world. Most of the businesses who comes to
+                        us feels helpless & our Vision to make them feel
+                        Confident.
+                      </p>
+                    </div>
                   </div>
+                </div>
+
+                <div class="stats-grid">
+                  <div class="stat-card projects">
+                    <div class="stat-number1">3840</div>
+                    <div class="stat-label">Project Completed</div>
+                  </div>
+
+                  <div class="stat-card team">
+                    <div class="stat-number1">350</div>
+                    <div class="stat-label">Team Members</div>
+                  </div>
+
+                  <div class="stat-card clients">
+                    <div class="stat-number1">93%</div>
+                    <div class="stat-label">Happy Clients</div>
+                  </div>
+
+                  <div class="stat-card support">
+                    <div class="stat-number1">24*7</div>
+                    <div class="stat-label">Customer Support</div>
+                  </div>
+                </div>
               </div>
-          </div>
+            </div>
             <!-- Pricing Section Ends -->
 
             <!-- Demo Section Begins  -->
@@ -2010,13 +2057,13 @@
                         href="#"
                         class="btn gk-download-btn redalt-btn gk-btn-margin"
                         role="button"
-                        ><i class="fa-brands fa-apple"></i> Apple User</a
+                        ><i class="fa fa-apple"></i> Apple User</a
                       >
                       <a
                         href="#"
                         class="btn gk-download-btn green-btn"
                         role="button"
-                        ><i class="fa-brands fa-android"></i> Android User</a
+                        ><i class="fa fa-android"></i> Android User</a
                       >
                     </div>
 
@@ -2112,7 +2159,7 @@
                         class="form-horizontal"
                         id="contactform"
                         method="post"
-                        action="process.php"
+                        action="process_trash.php"
                       >
                         <div class="row">
                           <div class="col-sm-12 col-md-12">
