@@ -1242,6 +1242,13 @@ img.responsive {
   color: #7f8c8d;
   padding: 12px 40px;
 }
+#contactform {
+    border: 2px solid #ccc; 
+    padding: 15px; 
+    border-radius: 15px; 
+    background-color: #bbe7e1;
+}
+
 
 .gk-contact-form .has-error .form-control {
   border-color: #a94442;
@@ -2003,7 +2010,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
- 
 }
 
 /* Hero Section */
@@ -2343,7 +2349,7 @@ body {
 }
 
 .mb-6{
-margin-top: 6rem;
+margin-top: 7rem;
 }
 
 @media (max-width: 968px) {
