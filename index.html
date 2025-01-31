@@ -93,177 +93,7 @@
     <!-- Color Panel -->
     <!-- <link href="css/color-panel.css" rel="stylesheet" type="text/css" /> -->
     <style>
-     .main-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #333;
-            max-width: 600px;
-            line-height: 1.2;
-            margin-bottom: 3rem;
-        }
-
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: start;
-            margin-top: 3rem;
-        }
-
-        .info-section {
-            grid-column: 1;
-        }
-
-        .stats-grid {
-            grid-column: 2;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .info-block {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-            position: relative;
-            top: 0;
-        }
-
-        .info-block:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .info-icon {
-            width: 48px;
-            height: 48px;
-            background-color: #f3f4f6;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-        }
-
-        .info-block:hover .info-icon {
-            transform: scale(1.1);
-            background-color: #e0f2fe;
-        }
-
-        .info-content h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 0.75rem;
-            transition: color 0.3s ease;
-        }
-
-        .info-block:hover .info-content h2 {
-            color: #2563eb;
-        }
-
-        .info-content p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .stat-card {
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            min-height: 180px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: scale(1.05);
-        }
-
-        .stat-number1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        .projects {
-            background-color: #22c55e;
-            color: white;
-        }
-
-        .projects .stat-label {
-            color: white;
-        }
-
-        .team {
-            background-color: #b8e2ff;
-            color: #3b82f6;
-        }
-
-        .clients {
-            background-color: #bddfc9;
-            color: #22c55e;
-        }
-
-        .support {
-            background-color: #ffb4ba;
-            color: #ef4444;
-        }
-
-        .mb-6{
-          margin-top: 6rem;
-        }
-
-        @media (max-width: 968px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            .info-section, .stats-grid {
-                grid-column: 1;
-            }
-
-            .main-title {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .stat-card {
-                min-height: 150px;
-            }
-
-            .info-block {
-                padding: 1.5rem;
-            }
-
-            .info-block:hover {
-                transform: translateY(-8px); /* Smaller lift on mobile */
-            }
-        }
+     
   </style>
   </head>
 
@@ -1942,129 +1772,95 @@
           <!-- Shape 4 Color Begins -->
           <div class="gk-dd-shape grey-yellow-color index-4">
             <!-- Download Section Begins -->
-            <div
-              id="download"
-              class="download-section download-section-padding index-big relative"
-            >
-              <div class="container">
-                <!-- Download Top Right Row Begins -->
-                <div class="row">
-                  <div
-                    class="col-lg-7 col-md-9 pull-right animated"
-                    data-animation="fadeInRight"
-                    data-animation-delay="500"
-                  >
-                    <!-- Title -->
-                    <h2 class="section-title color-grey">
-                      <span class="text-extrabold">Download</span> App Now
-                    </h2>
-                    <!-- Shape Down Arrow -->
-                    <p class="text-center color-grey">
-                      <i class="flaticon flaticon-yield gk-triangle-medium"></i>
-                    </p>
-                  </div>
-                </div>
-                <!-- Download Top Right Row Ends -->
-                <!-- Download Content Row Begins -->
-                <div class="row">
-                  <!-- Iphone Image -->
-                  <div
-                    class="col-lg-6 col-md-4 download-left-img animated"
-                    data-animation="fadeInLeft"
-                    data-animation-delay="500"
-                  >
-                    <img
-                      src="images/download-app-google.jpeg"
-                      alt="IPhone Black"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <!-- Right Info -->
-                  <div
-                    class="col-lg-5 col-md-7 download-right-info animated"
-                    data-animation="fadeInDown"
-                    data-animation-delay="800"
-                  >
-                    <!-- Shape Pointer -->
-                    <div
-                      class="gk-pointer-features gk-download-pointer gk-up-right-arrow"
-                    >
-                      <img
-                        src="images/up-right-arrow-icon.png"
-                        alt="Pointer"
-                        class="img-responsive"
-                      />
-                    </div>
-                    <!-- Content -->
-                    <h3 class="section-msg text-center color-grey">
-                      Select your device platform and <br />
-                      get download started
-                    </h3>
-                    <!-- Button -->
-                    <div class="download-button">
-                      <a
-                        href="#"
-                        class="btn gk-download-btn redalt-btn gk-btn-margin"
-                        role="button"
-                        ><i class="fa fa-apple"></i> Apple User</a
-                      >
-                      <a
-                        href="#"
-                        class="btn gk-download-btn green-btn"
-                        role="button"
-                        ><i class="fa fa-android"></i> Android User</a
-                      >
-                    </div>
-
-                    <!-- Subscribe Form -->
-                    <div class="subscribe text-center gk-contact-form">
-                      <!-- Title -->
-                      <h2 class="section-msg1 text-uppercase color-grey">
-                        <span class="text-extrabold">Subscribe</span> Now!
-                      </h2>
-                      <!-- Description -->
-                      <p>
-                        Ut labores laoreet petentium vix. Nec cu eripuit al.
-                      </p>
-                      <!-- Form -->
-                      <div class="subscribe-form">
-                        <!-- Form Error or Success Message -->
-                        <p class="gk-form-message-subscribe"></p>
-                        <form
-                          role="form"
-                          name="subscribe"
-                          class="form-horizontal"
-                          id="subscribe"
-                          method="post"
-                          action="subscribe.php"
-                        >
-                          <div class="col-md-12">
-                            <!-- Email -->
-                            <div class="form-group gk-email">
-                              <input
-                                type="email"
-                                placeholder="Your Email Address"
-                                class="subscribe input-email form-control email text-center"
-                                name="subscribe_email"
-                              />
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="gk-input-submit submit">
-                              <button type="submit" class="btn gk-submit">
-                                SUBSCRIBE
-                              </button>
-                            </div>
+            <div class="container">
+              <h1 class="section-title">Why Choose Arramton Infotech For Your App Development Project?</h1>
+              
+              <div class="content-wrapper1">
+                  <div class="features-grid1">
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="/images/exp_dev_1.svg" alt="Experienced Developers Icon">
                           </div>
-                        </form>
+                          <div class="feature-text1">Experienced Developers</div>
                       </div>
-                      <!-- Form Ends -->
-                    </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="/images/group_why.png" alt="Infrastructure Icon">
+                          </div>
+                          <div class="feature-text1">Scalable & Secure Infrastructure</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/user_cent.svg" alt="Design Icon">
+                          </div>
+                          <div class="feature-text1">User-Centric Design Approach</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="/images/cost.svg" alt="Cost Icon">
+                          </div>
+                          <div class="feature-text1">Cost-Effective Services</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/weekly_monthly.png" alt="Reporting Icon">
+                          </div>
+                          <div class="feature-text1">Weekly/Monthly Reporting</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/integeration.svg" alt="Integration Icon">
+                          </div>
+                          <div class="feature-text1">Seamless Integrations</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/communication.png" alt="Communication Icon">
+                          </div>
+                          <div class="feature-text1">Transparent & Smooth Communication</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/quality.png" alt="Quality Icon">
+                          </div>
+                          <div class="feature-text1">100% Quality Assurance</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/comp_test.png" alt="Testing Icon">
+                          </div>
+                          <div class="feature-text1">Comprehensive Testing & Deployment</div>
+                      </div>
+      
+                      <div class="feature-item1">
+                          <div class="feature-icon1">
+                              <img src="images/data.svg" alt="Analytics Icon">
+                          </div>
+                          <div class="feature-text1">Data-Driven Insights & Analytics</div>
+                      </div>
                   </div>
-                  <!-- Right Info Ends -->
-                </div>
-                <!-- Download Content Row Ends -->
+      
+                  <div class="images-grid">
+                      <div class="image-container">
+                          <img src="images/group_image.png" alt="Team working">
+                      </div>
+                      <div class="image-container">
+                          <img src="images/group_image.png" alt="Office space">
+                      </div>
+                      <div class="image-container">
+                          <img src="images/group_image.png" alt="Team collaboration">
+                      </div>
+                  </div>
               </div>
-            </div>
+          </div>
             <!-- Download Section Ends -->
 
             <!-- Contact Section Begins -->
