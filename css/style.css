@@ -230,7 +230,7 @@ img.responsive {
 }
 
 .color-white {
-  color: #ffffff;
+  color: #000;
 }
 
 .color-green {
@@ -291,6 +291,7 @@ img.responsive {
   font-size: 32px;
   line-height: 1.4;
   margin-top: 15px;
+  color: black;
 }
 
 .section-msg1 {
@@ -1094,7 +1095,7 @@ img.responsive {
 }
 
 .download-left-img {
-  margin-top: -60px;
+  /* margin-top: -60px; */
 }
 
 .download-right-info {
