@@ -77,6 +77,11 @@
   cursor: pointer;
 }
 
+.col-sm-7{
+  position: relative;
+  z-index: 9999;
+  top: 4rem;
+}
 
 /* Meet our Team Design */
 .rowprofile {
