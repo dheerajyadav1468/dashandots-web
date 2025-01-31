@@ -437,7 +437,7 @@ img.responsive {
 /* =========================== BANNER SECTION ============================== */
 /* ------------- Left Banner Styles ------------- */
 .left-banner-text {
-  margin-top: 1.5rem;
+  margin-top: 5.5rem;
   padding-top: 0.5rem;
   color: #ffffff;
 }
@@ -2001,6 +2001,8 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 9999;
 }
 
 /* Hero Section */
