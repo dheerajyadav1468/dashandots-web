@@ -104,121 +104,121 @@ jQuery(document).ready(function ($) {
   /* =============================
   Contact Form Validation
   ============================= */
-  $("#contactform").bootstrapValidator({
-    message: "",
-    feedbackIcons: {
-      valid: "fa fa-check",
-      invalid: "fa fa-times",
-      validating: "fa fa-refresh",
-    },
-    fields: {
-      contact_name: {
-        validators: {
-          notEmpty: {
-            message: "",
-          },
-        },
-      },
-      contact_email: {
-        validators: {
-          notEmpty: {
-            message: "",
-          },
-          emailAddress: {
-            message: "",
-          },
-        },
-      },
-      contact_message: {
-        validators: {
-          notEmpty: {
-            message: "",
-          },
-        },
-      },
-    },
-    submitHandler: function (validator, form, submitButton) {
-      var data = $("#contactform").serialize();
+  // $("#contactform").bootstrapValidator({
+  //   message: "",
+  //   feedbackIcons: {
+  //     valid: "fa fa-check",
+  //     invalid: "fa fa-times",
+  //     validating: "fa fa-refresh",
+  //   },
+  //   fields: {
+  //     contact_name: {
+  //       validators: {
+  //         notEmpty: {
+  //           message: "",
+  //         },
+  //       },
+  //     },
+  //     contact_email: {
+  //       validators: {
+  //         notEmpty: {
+  //           message: "",
+  //         },
+  //         emailAddress: {
+  //           message: "",
+  //         },
+  //       },
+  //     },
+  //     contact_message: {
+  //       validators: {
+  //         notEmpty: {
+  //           message: "",
+  //         },
+  //       },
+  //     },
+  //   },
+  //   submitHandler: function (validator, form, submitButton) {
+  //     var data = $("#contactform").serialize();
 
-      $.ajax({
-        type: "POST",
-        url: "process.php",
-        data: $("#contactform").serialize(),
-        success: function (msg) {
-          $(".gk-form-message").html(msg);
-          $(".gk-form-message").show();
-          submitButton.removeAttr("disabled");
-          resetForm($("#contactform"));
-        },
-        error: function (msg) {
-          $(".gk-form-message").html(msg);
-          $(".gk-form-message").show();
-          submitButton.removeAttr("disabled");
-          resetForm($("#contactform"));
-        },
-      });
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "process.php",
+  //       data: $("#contactform").serialize(),
+  //       success: function (msg) {
+  //         $(".gk-form-message").html(msg);
+  //         $(".gk-form-message").show();
+  //         submitButton.removeAttr("disabled");
+  //         resetForm($("#contactform"));
+  //       },
+  //       error: function (msg) {
+  //         $(".gk-form-message").html(msg);
+  //         $(".gk-form-message").show();
+  //         submitButton.removeAttr("disabled");
+  //         resetForm($("#contactform"));
+  //       },
+  //     });
 
-      return false;
-    },
-  });
+  //     return false;
+  //   },
+  // });
 
-  $("#subscribe").bootstrapValidator({
-    message: "",
-    feedbackIcons: {
-      valid: "fa fa-check",
-      invalid: "fa fa-times",
-      validating: "fa fa-refresh",
-    },
-    fields: {
-      subscribe_email: {
-        validators: {
-          notEmpty: {
-            message: "",
-          },
-        },
-      },
-    },
-    submitHandler: function (validator, form, submitButton) {
-      var data = $("#subscribe").serialize();
+  // $("#subscribe").bootstrapValidator({
+  //   message: "",
+  //   feedbackIcons: {
+  //     valid: "fa fa-check",
+  //     invalid: "fa fa-times",
+  //     validating: "fa fa-refresh",
+  //   },
+  //   fields: {
+  //     subscribe_email: {
+  //       validators: {
+  //         notEmpty: {
+  //           message: "",
+  //         },
+  //       },
+  //     },
+  //   },
+  //   submitHandler: function (validator, form, submitButton) {
+  //     var data = $("#subscribe").serialize();
 
-      $.ajax({
-        type: "POST",
-        url: "subscribe.php",
-        data: $("#subscribe").serialize(),
-        success: function (msg) {
-          $(".gk-form-message-subscribe").html(msg);
-          $(".gk-form-message-subscribe").show();
-          submitButton.removeAttr("disabled");
-          resetForm($("#subscribe"));
-        },
-        error: function (msg) {
-          $(".gk-form-message-subscribe").html(msg);
-          $(".gk-form-message-subscribe").show();
-          submitButton.removeAttr("disabled");
-          resetForm($("#subscribe"));
-        },
-      });
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "subscribe.php",
+  //       data: $("#subscribe").serialize(),
+  //       success: function (msg) {
+  //         $(".gk-form-message-subscribe").html(msg);
+  //         $(".gk-form-message-subscribe").show();
+  //         submitButton.removeAttr("disabled");
+  //         resetForm($("#subscribe"));
+  //       },
+  //       error: function (msg) {
+  //         $(".gk-form-message-subscribe").html(msg);
+  //         $(".gk-form-message-subscribe").show();
+  //         submitButton.removeAttr("disabled");
+  //         resetForm($("#subscribe"));
+  //       },
+  //     });
 
-      return false;
-    },
-  });
+  //     return false;
+  //   },
+  // });
 
-  function resetForm($form) {
-    $form
-      .find("input:text, input:password, input, input:file, select, textarea")
-      .val("");
-    $form
-      .find("input:radio, input:checkbox")
-      .removeAttr("checked")
-      .removeAttr("selected");
-    $form
-      .find(
-        "input:text, input:password, input, input:file, select, textarea, input:radio, input:checkbox"
-      )
-      .parent()
-      .find(".form-control-feedback")
-      .hide();
-  }
+  // function resetForm($form) {
+  //   $form
+  //     .find("input:text, input:password, input, input:file, select, textarea")
+  //     .val("");
+  //   $form
+  //     .find("input:radio, input:checkbox")
+  //     .removeAttr("checked")
+  //     .removeAttr("selected");
+  //   $form
+  //     .find(
+  //       "input:text, input:password, input, input:file, select, textarea, input:radio, input:checkbox"
+  //     )
+  //     .parent()
+  //     .find(".form-control-feedback")
+  //     .hide();
+  // }
 
   /* =============================
   Count Section

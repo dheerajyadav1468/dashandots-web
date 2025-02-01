@@ -44,6 +44,7 @@
     <meta name="twitter:app:country" content="India" />
 
     <link rel="canonical" href="https://dashanddots.tech" />
+
     <!-- This link will open www. -->
 
     <!-- <title>Dashandots Technology: Driving Innovation and Building on Excellence</title> -->
@@ -1177,7 +1178,7 @@
                 <div class="row">
                   <div
                     class="col-12 animated"
-                    data-animation="fadeInUp"
+                    data-animation="fadeInLeft"
                     data-animation-delay="800"
                   >
                     <!-- Reviews Container Begins -->
@@ -1240,7 +1241,7 @@
                                     class="img-responsive"
                                     width="330"
                                     height="330"
-                                    src="images/reviews/arjun.jpg"
+                                    src="images/review_arjun.jpg"
                                     alt="Arjun Deshmukh"
                                   />
                                 </div>
@@ -1282,7 +1283,7 @@
                                     class="img-responsive"
                                     width="330"
                                     height="330"
-                                    src="images/reviews/suresh_nairr.jpg"
+                                    src="images/review_suresh.jpg"
                                     alt="Suresh Nair"
                                   />
                                 </div>
@@ -1324,7 +1325,7 @@
                                     class="img-responsive"
                                     width="330"
                                     height="330"
-                                    src="images/reviews/isha.jpg"
+                                    src="images/review_isha.jpg"
                                     alt="Isha Mehta"
                                   />
                                 </div>
@@ -1546,7 +1547,7 @@
                       <br />Possibilities
                     </h3>
                     <!-- Content -->
-                    <p>Ut labores laoreet petentium vix. Nec cu eripuit al.</p>
+                    <p>An ocean of opportunities</p>
                   </div>
                   <!-- Screenshot Left Info Ends -->
                   <!-- Shape Pointer -->
@@ -1601,7 +1602,7 @@
                       <!-- Item 1 -->
                       <div class="screen-item">
                         <img
-                          src="/images/app-dash-display3.jpg"
+                          src="/images/app-dash-display1.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1611,7 +1612,7 @@
                       <!-- Item 2 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display2.jpg"
+                          src="images/app-dash-display2.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1621,7 +1622,7 @@
                       <!-- Item 3 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display.jpg"
+                          src="images/app-dash-display.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1631,7 +1632,7 @@
                       <!-- Item 4 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display3.jpg"
+                          src="images/app-dash-display1.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1641,7 +1642,7 @@
                       <!-- Item 5 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display2.jpg"
+                          src="images/app-dash-display2.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1651,7 +1652,7 @@
                       <!-- Item 6 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display.jpg"
+                          src="images/app-dash-display.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1980,15 +1981,7 @@
                       data-animation="fadeInUp"
                       data-animation-delay="900"
                     >
-                      <!-- Form Begins -->
-                      <form
-                        role="form"
-                        name="contactform"
-                        class="form-horizontal"
-                        id="contactform"
-                        method="post"
-                        action="process_trash.php"
-                      >
+                      <form id="contactform" class="form-horizontal">
                         <div id="alert-container"></div>
 
                         <div class="row">
@@ -2002,6 +1995,19 @@
                                     class="input-name form-control"
                                     placeholder="Name"
                                     required
+                                  />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12 form-group gk-input-text">
+                                  <input
+                                    type="text"
+                                    name="contact_number"
+                                    class="input-name form-control"
+                                    placeholder="Contact No"
+                                    required
+                                    maxlength="10"
+                                    pattern="\d{10}"
                                   />
                                 </div>
                               </div>
@@ -2176,6 +2182,34 @@
     <!-- Custom -->
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/megamenu.js"></script>
-    <!-- Script Ends -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Jpd2c2BB-548M80E7"); //public key from account
+
+        var form = document.getElementById("contactform");
+        var alertContainer = document.getElementById("alert-container");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs
+            .sendForm("service_k3qfo0v", "template_ecqrxkp", this) //service id and template id
+            .then(
+              function () {
+                console.log("SUCCESS!");
+                alertContainer.innerHTML =
+                  '<div class="alert alert-success">Message sent successfully!</div>';
+                form.reset();
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alertContainer.innerHTML =
+                  '<div class="alert alert-danger">Failed to send message. Please try again.</div>';
+              }
+            );
+        });
+      })();
+    </script>
   </body>
 </html>
