@@ -1988,20 +1988,9 @@ img.responsive {
 
 /* profile page*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
-body {
-  background-color: #ffffff;
-  color: #333;
-  overflow-x: hidden;
-}
 
-.container {
+.container_profile {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -2494,7 +2483,7 @@ margin-top: 10rem;
       height: 250px;
   }
 
-  .container {
+  .container1 {
       padding: 2rem 1rem;
   }
 
