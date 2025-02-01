@@ -1253,17 +1253,9 @@ img.responsive {
   color: #7f8c8d;
   padding: 12px 40px;
 }
-<<<<<<< HEAD
-#contactform {
-  border: 2px solid #ccc; 
-  padding: 15px; 
-  border-radius: 15px; 
-  background-color: #5dc7f8;
-=======
 
 .carousel-inner {
   min-width: 200px;
->>>>>>> 201dedd15e60a8f36218f2654b7b300e74ab41f2
 }
 
 .gk-contact-form .has-error .form-control {
