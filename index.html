@@ -44,6 +44,7 @@
     <meta name="twitter:app:country" content="India" />
 
     <link rel="canonical" href="https://dashanddots.tech" />
+    
     <!-- This link will open www. -->
 
     <!-- <title>Dashandots Technology: Driving Innovation and Building on Excellence</title> -->
@@ -1633,7 +1634,7 @@
                       <!-- Item 4 -->
                       <div class="screen-item">
                         <img
-                          src="images/app-dash-display3.png"
+                          src="images/app-dash-display1.png"
                           width="314"
                           height="534"
                           alt="App Screenshot"
@@ -1951,35 +1952,63 @@
                       data-animation="fadeInUp"
                       data-animation-delay="900"
                     >
-                      <!-- Form Begins -->
-                      <form role="form" name="contactform" class="form-horizontal" id="contactform" method="post" action="process_trash.php">
-                        <div id="alert-container"></div>
-                        
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12 form-group gk-input-text">
-                                            <input type="text" name="contact_name" class="input-name form-control" placeholder="Name" required />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12 form-group gk-email">
-                                            <input type="email" name="contact_email" class="input-email form-control email" placeholder="Email" required />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-lg-12 col-md-12 gk-textarea-message">
-                                        <textarea name="contact_message" class="textarea-message form-control" rows="4" cols="25" placeholder="Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="gk-input-submit submit text-center">
-                                    <button type="submit" class="btn gk-submit">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <form id="contactform" class="form-horizontal">
+                      <div id="alert-container"></div>
+                      
+                      <div class="row">
+                          <div class="col-sm-12 col-md-12">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-12 form-group gk-input-text">
+                                          <input type="text" name="contact_name" class="input-name form-control" placeholder="Name" required />
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12 form-group gk-input-text">
+                                          <input type="text" name="contact_number" class="input-name form-control" placeholder="Contact No" required />
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12 form-group gk-email">
+                                          <input type="email" name="contact_email" class="input-email form-control email" placeholder="Email" required />
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="col-lg-12 col-md-12 gk-textarea-message">
+                                      <textarea name="contact_message" class="textarea-message form-control" rows="4" cols="25" placeholder="Message" required></textarea>
+                                  </div>
+                              </div>
+                              <div class="gk-input-submit submit text-center">
+                                  <button type="submit" class="btn gk-submit">Send Message</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              
+                  <script>
+                      (function() {
+                          // Initialize EmailJS with your public key
+                          emailjs.init("CsGwBofF2qAvF08Pg");
+                      })();
+              
+                      window.onload = function() {
+                          document.getElementById('contactform').addEventListener('submit', function(event) {
+                              event.preventDefault();
+                              
+                              // These IDs are from your EmailJS account
+                              emailjs.sendForm('service_omu12la', 'template_2frah6o', this)
+                                  .then(function() {
+                                      console.log('SUCCESS!');
+                                      document.getElementById('alert-container').innerHTML = '<div class="alert alert-success">Message sent successfully!</div>';
+                                      document.getElementById('contactform').reset();
+                                  }, function(error) {
+                                      console.log('FAILED...', error);
+                                      document.getElementById('alert-container').innerHTML = '<div class="alert alert-danger">Failed to send message. Please try again.</div>';
+                                  });
+                          });
+                      }
+                  </script>
                       <!-- Form Ends -->
                     </div>
                     <!-- Contact Form Container Ends -->
@@ -2117,6 +2146,8 @@
     <!-- Custom -->
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/megamenu.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <!-- Script Ends -->
   </body>
 </html>

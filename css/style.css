@@ -258,8 +258,8 @@ img.responsive {
 }
 
 .index-3 {
-  position: relative;
   z-index: 3;
+  position: relative;
 }
 
 .index-4 {
@@ -983,6 +983,7 @@ img.responsive {
   -o-border-radius: 12px;
   -ms-border-radius: 12px;
   margin: 0 auto;
+  display: flex;
 }
 
 .app-container {
@@ -1134,6 +1135,10 @@ img.responsive {
   padding-top: 20px;
 }
 
+.gk-input-submit{
+  margin-bottom: .6rem;
+}
+
 .subscribe-form {
   padding-top: 20px;
 }
@@ -1150,6 +1155,9 @@ img.responsive {
 /* =========================== CONTACT US SECTION ============================== */
 .gk-contact-form {
   padding-top: 40px;
+  border: 1px solid black;
+  background-color: #d6ffff;
+  border-radius: .5rem;
 }
 
 .gk-contact-form .form-control {
@@ -1245,11 +1253,17 @@ img.responsive {
   color: #7f8c8d;
   padding: 12px 40px;
 }
+<<<<<<< HEAD
 #contactform {
   border: 2px solid #ccc; 
   padding: 15px; 
   border-radius: 15px; 
   background-color: #5dc7f8;
+=======
+
+.carousel-inner {
+  min-width: 200px;
+>>>>>>> 201dedd15e60a8f36218f2654b7b300e74ab41f2
 }
 
 .gk-contact-form .has-error .form-control {
@@ -2455,6 +2469,8 @@ margin-top: 6rem;
 .image-container img {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 99;
   object-fit: cover;
 }
 
