@@ -817,6 +817,7 @@ img.responsive {
   float: right;
   max-width: 310px;
   margin: 30px 30px 0 0;
+  border-radius: 20px;
 }
 
 .reviews-author:before {
@@ -974,6 +975,8 @@ img.responsive {
 }
 
 .screen-item img {
+  height: 400px;
+  display: flex;
   border-radius: 12px;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -1241,6 +1244,12 @@ img.responsive {
   text-transform: uppercase;
   color: #7f8c8d;
   padding: 12px 40px;
+}
+#contactform {
+  border: 2px solid #ccc; 
+  padding: 15px; 
+  border-radius: 15px; 
+  background-color: #bbe7e1;
 }
 
 .gk-contact-form .has-error .form-control {
@@ -2331,7 +2340,7 @@ body {
 }
 
 .mb-6{
-margin-top: 7rem;
+margin-top: 10rem;
 }
 
 @media (max-width: 968px) {

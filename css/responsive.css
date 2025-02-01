@@ -269,6 +269,7 @@
   /* ------- Screenshot ------- */
   .screen-item {
     padding: 20px;
+    display: flex;
   }
   .screen-item img {
     max-width: 76%;
