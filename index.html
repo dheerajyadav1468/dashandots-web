@@ -2075,7 +2075,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
   (function() {
-    emailjs.init("CsGwBofF2qAvF08Pg");
+    emailjs.init("CsGwBofF2qAvF08Pg"); //public key from account
 
     var form = document.getElementById('contactform');
     var alertContainer = document.getElementById('alert-container');
@@ -2083,7 +2083,7 @@
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      emailjs.sendForm('service_omu12la', 'template_2frah6o', this)
+      emailjs.sendForm('service_omu12la', 'template_2frah6o', this)//service id and template id
         .then(function() {
           console.log('SUCCESS!');
           alertContainer.innerHTML = '<div class="alert alert-success">Message sent successfully!</div>';
