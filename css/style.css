@@ -1253,12 +1253,7 @@ img.responsive {
   color: #7f8c8d;
   padding: 12px 40px;
 }
-#contactform {
-  border: 2px solid #ccc; 
-  padding: 15px; 
-  border-radius: 15px; 
-  background-color: #bbe7e1;
-}
+
 .carousel-inner {
   min-width: 200px;
 }
