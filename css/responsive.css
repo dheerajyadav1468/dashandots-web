@@ -269,6 +269,7 @@
   /* ------- Screenshot ------- */
   .screen-item {
     padding: 20px;
+    display: flex;
   }
   .screen-item img {
     max-width: 76%;
@@ -896,7 +897,7 @@
   }
   /* ------- Title ------- */
   .section-title {
-    font-size: 55px;
+    font-size: 45px;
   }
   .left-banner-text h1 {
     font-size: 48px;
