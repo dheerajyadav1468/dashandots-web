@@ -306,6 +306,10 @@ img.responsive {
   font-size: 30px;
 }
 
+.text-uppercase{
+  font-size: 3.5rem;
+}
+
 /* ------- Pointer Arrow Common Styles ------- */
 .gk-pointer-features {
   position: absolute;
