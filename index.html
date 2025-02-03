@@ -1915,12 +1915,14 @@
                             </div>
                             <div class="row">
                               <div class="col-md-12 form-group gk-input-text">
-                                <input type="text" name="contact_number" class="input-name form-control" placeholder="Contact No" required />
+                                <input type="text" name="contact_number" class="input-name form-control" placeholder="Contact No" required maxlength="10" pattern="\d{10}" />
                               </div>
                             </div>
                             <div class="row">
                               <div class="col-md-12 form-group gk-email">
-                                <input type="email" name="contact_email" class="input-email form-control email" placeholder="Email" required />
+                                <input type="email" name="contact_email" class="input-email form-control email" placeholder="Email" required
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+         title="Enter a valid email address (e.g., example@gmail.com)" />
                               </div>
                             </div>
                           </div>
