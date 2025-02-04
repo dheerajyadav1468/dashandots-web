@@ -1018,7 +1018,7 @@
                       <br />With Dashandots Technology
                     </h3>
                     <!-- Content -->
-                    <p>
+                    <p p style="font-size: 14px; color: #666666">
                       Our expert app developers are really good at technology
                       that will smoothen your business process by 10x. We cater
                       for
@@ -1096,7 +1096,7 @@
                               ERP software
                             </h4>
                             <!-- Content -->
-                            <p>
+                            <p style = "color: #777777; font-size: 12px;">
                               "Boost your business growth with our powerful ERP software, designed to optimize operations and drive efficiency. Experience seamless integration and enhanced productivity with our top-rated ERP solutions."
                             </p>
                           </div>
@@ -1118,7 +1118,7 @@
                               Mobile Apps
                             </h4>
                             <!-- Content -->
-                            <p>
+                            <p style = "color: #777777; font-size: 12px;">
                               "Unlock your business potential with custom mobile app development that delivers seamless user experiences. Boost engagement and drive growth with our innovative, high-performance mobile solutions."
                             </p>
                           </div>
@@ -1145,7 +1145,7 @@
                               Website
                             </h4>
                             <!-- Content -->
-                            <p>
+                            <p style = "color: #777777; font-size: 12px;">
                               "Create a lasting online presence with professional website development services. Our responsive, SEO-optimized websites are designed to attract, engage, and convert visitors into loyal customers."
                             </p>
                           </div>
@@ -1165,7 +1165,7 @@
                               Custom Software
                             </h4>
                             <!-- Content -->
-                            <p>
+                            <p style = "color: #777777; font-size: 12px;">
                              "Transform your business with tailored software solutions that fit your unique needs. Our custom software services enhance efficiency, streamline processes, and scale with your business growth."
                             </p>
                           </div>
@@ -1209,7 +1209,7 @@
                     class="col-md-7 col-lg-6 app-reviews animated"
                     data-animation="fadeInLeft"
                     data-animation-delay="500"
-                  >
+                    style="padding-bottom: 0px;" >
                     <!-- Title -->
                     <h2 class="section-title color-grey">
                       <span class="text-extrabold">Client</span> Reviews
@@ -1239,7 +1239,7 @@
                       data-ride="carousel"
                     >
                       <!-- Indicators Begins -->
-                      <div class="reviews-indicators">
+                      <div class="reviews-indicators" id = "review-indicator-desktop">
                         <a
                           class="gk-slide-left"
                           href="#reviews-slider"
@@ -1397,6 +1397,24 @@
                       <!-- Slider Inner Ends -->
                     </div>
                     <!-- Reviews Container Ends -->
+                      <!-- Indicators Begins -->
+                    <div class="reviews-indicators" id = "review-indicator-mobile">
+                      <a
+                        class="gk-slide-left"
+                        href="#reviews-slider"
+                        data-slide="prev"
+                      >
+                        <i class="fa fa-chevron-left color-white"></i>
+                      </a>
+                      <a
+                        class="gk-slide-right"
+                        href="#reviews-slider"
+                        data-slide="next"
+                      >
+                        <i class="fa fa-chevron-right color-white"></i>
+                      </a>
+                    </div>
+                    <!-- Indicators Ends -->
                   </div>
                 </div>
                 <!-- Reviews Slider Row Ends -->
@@ -1455,11 +1473,11 @@
                   data-animation="fadeIn"
                   data-animation-delay="900"
                 >
-                  <img
+                  <!-- <img
                     src="images/down-left-arrow-icon.png"
                     alt="Pointer"
                     class="img-responsive"
-                  />
+                  /> -->
                 </div>
               </div>
               <!-- Services Slider Begins -->
@@ -2055,9 +2073,10 @@
                                   <input
                                     type="text"
                                     name="contact_name"
-                                    class="input-name form-control"
+                                    class="input-name form-control contact_name"
                                     placeholder="Name"
                                     required
+                                   
                                   />
                                 </div>
                               </div>

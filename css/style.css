@@ -125,12 +125,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 a,
-a:hover,
-a:focus,
-.btn:focus {
-  text-decoration: none;
-  outline: none;
-}
+					a:hover,
+					a:focus,
+					.btn:focus {
+					  text-decoration: none;
+					  outline: none;
+					  /* added this  */
+					  transition: font-size 0.3s ease-in-out;
+						}
+						/* Making the transistion smooth */
+						a:hover {
+						  font-size: 1.1em; /* Increases size slightly on hover */
+						}
+
 
 img,
 img.responsive {
@@ -309,6 +316,7 @@ img.responsive {
 
 .text-uppercase{
   font-size: 25px;
+  padding-top: 5px;
 }
 
 /* ------- Pointer Arrow Common Styles ------- */
@@ -617,7 +625,10 @@ img.responsive {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
+ .contact_name{
+  padding-top: 50px;
+   padding-bottom: 15px;
+ }
 .after-1500 .gk-dd-shape:before {
   left: -685px;
 }
@@ -1353,9 +1364,11 @@ img.responsive {
 }
 
 .contact-info {
-  padding-top: 160px;
+  padding-top: 95px;
+  padding-left: 300px;
   font-size: 17px;
 }
+
 
 .contact-row {
   margin-bottom: 15px;
@@ -2203,7 +2216,7 @@ img.responsive {
     justify-content: center;
   }
   .gk-contact-form{
-    background: #d64f4f;
+    background: #1EF2F2;
   }
 }
 
@@ -2471,6 +2484,10 @@ img.responsive {
 }
 
 @media (max-width: 1024px) {
+  .awesome-services {
+    height: 333px;
+  }
+
   .section-title {
     font-size: 2rem;
   }
@@ -2481,6 +2498,7 @@ img.responsive {
 }
 
 @media (max-width: 768px) {
+  
   .content-wrapper1 {
     display: flex;
     flex-direction: column;
@@ -2496,5 +2514,8 @@ img.responsive {
 
   .container1 {
     padding: 2rem 1rem;
+  }
+  .contact-info{
+    padding-left: 0px;
   }
 }

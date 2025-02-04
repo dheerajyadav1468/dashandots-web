@@ -615,6 +615,7 @@
   }
   .screen-item img {
     max-width: 100%;
+    height: 300px;
   }
   /* ------- Pricing ------- */
   .pricing-section .app-right-info {
@@ -895,9 +896,15 @@
   .gk-dd-shape:after {
     top: 56%;
   }
+
+
+  .contact_name{
+    padding-top: 0px;
+     padding-bottom: 0px;
+   }
   /* ------- Title ------- */
   .section-title {
-    font-size: 45px;
+    font-size: 30px;
   }
   .left-banner-text h1 {
     font-size: 48px;
@@ -937,6 +944,7 @@
   .gk-dd-shape:after {
     margin: 0 -320px;
   }
+
   /* ------- Reviews ------- */
   .reviews-image img {
     max-width: 260px;
@@ -977,4 +985,23 @@
   .gk-dd-shape:after {
     margin: 0 -325px;
   }
+}
+#review-indicator-desktop {
+  display: block;
+}
+
+#review-indicator-mobile {
+  display: none;
+}
+
+
+/* Hide when screen width is 768px or smaller */
+@media only screen and (max-width: 768px) {
+  #review-indicator-desktop {
+      display: none;
+  }
+  #review-indicator-mobile {
+    display: block;
+    }
+
 }
