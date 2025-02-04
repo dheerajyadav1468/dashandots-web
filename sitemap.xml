@@ -33,6 +33,262 @@
         <priority>0.7</priority>
     </url>
 
+      <!-- Tour Page -->
+    <url>
+        <loc>https://dashandots.tech/tour.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+       <!-- Industrial Page -->
+    <url>
+        <loc>https://dashandots.tech/industrial.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+      <!-- Salons Page -->
+    <url>
+        <loc>https://dashandots.tech/salons.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+      <!-- Ecommerce Page -->
+    <url>
+        <loc>https://dashandots.tech/ecommerce.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+      <!-- Real Estate Page -->
+    <url>
+        <loc>https://dashandots.tech/real_estate.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+      <!-- Automobolie Page -->
+    <url>
+        <loc>https://dashandots.tech/automobile.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+      <!-- Hospitals Page -->
+    <url>
+        <loc>https://dashandots.tech/hospitals.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+       <!-- Mobile Page -->
+    <url>
+        <loc>https://dashandots.tech/mobile.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+       <!-- Digitl Page -->
+    <url>
+        <loc>https://dashandots.tech/digitl.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Django Page -->
+    <url>
+        <loc>https://dashandots.tech/django.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Flask Page -->
+    <url>
+        <loc>https://dashandots.tech/flask.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Graphics Page -->
+    <url>
+        <loc>https://dashandots.tech/graphics.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Lamp Page -->
+    <url>
+        <loc>https://dashandots.tech/lamp.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Mean Page -->
+    <url>
+        <loc>https://dashandots.tech/mean.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Mern Page -->
+    <url>
+        <loc>https://dashandots.tech/mern.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Navbar-temp Page -->
+    <url>
+        <loc>https://dashandots.tech/navbar-temp.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Node Page -->
+    <url>
+        <loc>https://dashandots.tech/node.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Panel Page -->
+    <url>
+        <loc>https://dashandots.tech/panel.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Plc Page -->
+    <url>
+        <loc>https://dashandots.tech/plc.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+        <!-- Profile Page -->
+    <url>
+        <loc>https://dashandots.tech/profile.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileB Page -->
+    <url>
+        <loc>https://dashandots.tech/profileB.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileD Page -->
+    <url>
+        <loc>https://dashandots.tech/profileD.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileM Page -->
+    <url>
+        <loc>https://dashandots.tech/profileM.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileR Page -->
+    <url>
+        <loc>https://dashandots.tech/profileR.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileS Page -->
+    <url>
+        <loc>https://dashandots.tech/profileS.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- ProfileU Page -->
+    <url>
+        <loc>https://dashandots.tech/profileU.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Ruby Page -->
+    <url>
+        <loc>https://dashandots.tech/ruby.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Scada Page -->
+    <url>
+        <loc>https://dashandots.tech/scada.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Seo Page -->
+    <url>
+        <loc>https://dashandots.tech/seo.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Training Page -->
+    <url>
+        <loc>https://dashandots.tech/training.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Web-app Page -->
+    <url>
+        <loc>https://dashandots.tech/web-app.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+         <!-- Website Page -->
+    <url>
+        <loc>https://dashandots.tech/website.html</loc>
+        <lastmod>2025-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
     <!-- avr Page -->
     <url>
         <loc>https://dashandots.tech/avr.html</loc>
