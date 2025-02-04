@@ -307,7 +307,7 @@ img.responsive {
 }
 
 .text-uppercase{
-  font-size: 3.5rem;
+  font-size: 30px;
 }
 
 /* ------- Pointer Arrow Common Styles ------- */
@@ -942,7 +942,7 @@ img.responsive {
 
 /* =========================== SCREENSHOT SECTION ============================== */
 .app-section-padding {
-  padding: 230px 0 20px;
+  padding: 300px 0 20px;
 }
 
 .app-left-info {
