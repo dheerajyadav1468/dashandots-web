@@ -197,6 +197,7 @@ img.responsive {
 /* ------------- Extra Classes ------------- */
 .text-extrabold {
   font-weight: 800;
+  font-size: 40px;
 }
 
 .text-bold {
@@ -307,7 +308,7 @@ img.responsive {
 }
 
 .text-uppercase{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* ------- Pointer Arrow Common Styles ------- */
@@ -581,6 +582,7 @@ img.responsive {
   position: relative;
   max-width: 1600px;
   margin: 0 auto;
+  /* margin-bottom: -295px; */
 }
 
 .gk-dd-shape:before {
@@ -843,7 +845,7 @@ img.responsive {
 }
 
 .author-margin {
-  margin: 45px 0 0;
+  margin: -15px 0 0;
 }
 
 .info-margin {
